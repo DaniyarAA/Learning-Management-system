@@ -59,7 +59,6 @@ const NavItems: React.FC<Props> = ({ activeItem, isMobile }) => {
                                     className={`text-[25px] font-Poppins font-[500] text-black dark:text-white`}
                                 >ELearning</span>
                             </Link>
-
                         </div>
                         {
                             navItemsData && navItemsData.map((i, index) => (
@@ -78,6 +77,7 @@ const NavItems: React.FC<Props> = ({ activeItem, isMobile }) => {
                         }
 
                     </div>
+
                 )
             }
         </>
