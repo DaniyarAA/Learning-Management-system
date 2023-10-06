@@ -1,6 +1,5 @@
-import type { Config } from 'tailwindcss'
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,10 +8,6 @@ const config: Config = {
   darkMode: ["class"],
   theme: {
     extend: {
-      fontFamily: {
-        Poppins: ["var(--font-Poppins"],
-        Josefin: ["var(--font-Josefin"],
-      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -26,18 +21,9 @@ const config: Config = {
         "1500px": "1500px",
         "800px": "800px",
         "400px": "400px",
-      }
+      } 
     },
   },
-  // theme: {
-  //   extend: {
-  //     backgroundImage: {
-  //       'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-  //       'gradient-conic':
-  //         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-  //     },
-  //   },
-  // },
   plugins: [],
 }
-export default config
+
